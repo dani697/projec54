@@ -10,7 +10,11 @@ function generateTasks(objSlug){
     const lista = [];
 
     for (let i = 1; i <= 5; i++) {  // går igenom listan tills den skrivit ut 5st
-       
+        // TODO: dagens datum, plussar dagar, förkorta datum till YYYYMMDD
+        const dueDate = new Date()
+        dueDate.setDate(dueDate.getDate() + i); // tog hjälp av AI med hur man gjorde index + 2 och hur man forkortade datumet
+        const formateradDueDate = dueDate.toISOString().split("T")[0]; // förkortar till YYYYMMDD och split tar bort tid
+        
         // TODO: lägger till uppgifterna sist i listan
         lista.push(
         {

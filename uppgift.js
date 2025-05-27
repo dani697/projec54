@@ -7,12 +7,15 @@ function generateTasks(objSlug){  //skapar en funktion för att skriva ut en lis
     const lista = [];  // skapar lista
 
     for (let i = 1; i <= 5; i++) {
+        const dueDate = new Date()
+        dueDate.setDate(dueDate.getDate() + i + i); // tog hjälp av AI med hur man gjorde index + 2 och hur man forkortade datumet
+        const formateradDueDate = dueDate.toISOString().split("T")[0]; // förkortar till YYYYMMDD och split tar bort tid
         
         lista.push(  // lägger till nya uppgifter sist i listan
         {
             taskId : `OBJ-${year}-999-T0${i}`, // lägger till en ny siffra varje gång den kör
             title: title,
-            dueDate: today
+            dueDate: formateradDueDate
         });
     }
     return lista;
