@@ -1,0 +1,30 @@
+// frågade AI vad schema utdata var
+
+[
+    {
+      "taskId": "OBJ-2025-999-T01",
+      "title": "Acquire High Paying Clients",
+      "dueDate": "2025-05-29"
+    },
+    {
+      "taskId": "OBJ-2025-999-T02",
+      "title": "Acquire High Paying Clients",
+      "dueDate": "2025-05-30"
+    },
+    {
+      "taskId": "OBJ-2025-999-T03",
+      "title": "Acquire High Paying Clients",
+      "dueDate": "2025-05-31"
+    },
+    {
+      "taskId": "OBJ-2025-999-T04",
+      "title": "Acquire High Paying Clients",
+      "dueDate": "2025-06-01"
+    },
+    {
+      "taskId": "OBJ-2025-999-T05",
+      "title": "Acquire High Paying Clients",
+      "dueDate": "2025-06-02"
+    }
+  ]
+  
